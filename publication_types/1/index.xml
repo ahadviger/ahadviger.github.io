@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1 | Antea Hadviger</title>
+    <link>https://ahadviger.github.io/publication_types/1/</link>
+      <atom:link href="https://ahadviger.github.io/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
+    <description>1</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Antea Hadviger</copyright><lastBuildDate>Sun, 15 Sep 2019 00:12:05 +0200</lastBuildDate>
+    <image>
+      <url>https://ahadviger.github.io/img/icon-192.png</url>
+      <title>1</title>
+      <link>https://ahadviger.github.io/publication_types/1/</link>
+    </image>
+    
+    <item>
+      <title>Stereo Event Lifetime and Disparity Estimation for Dynamic Vision Sensors</title>
+      <link>https://ahadviger.github.io/publication/event-lifetime/</link>
+      <pubDate>Sun, 15 Sep 2019 00:12:05 +0200</pubDate>
+      <guid>https://ahadviger.github.io/publication/event-lifetime/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computationally Efficient Dense Moving Object Detection Based on Reduced Space Disparity Estimation</title>
+      <link>https://ahadviger.github.io/publication/stereo-disparity/</link>
+      <pubDate>Sat, 25 Aug 2018 00:00:00 +0000</pubDate>
+      <guid>https://ahadviger.github.io/publication/stereo-disparity/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
