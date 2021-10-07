@@ -5,12 +5,20 @@
     <link>https://ahadviger.github.io/authors/ivan-petrovic/</link>
       <atom:link href="https://ahadviger.github.io/authors/ivan-petrovic/index.xml" rel="self" type="application/rss+xml" />
     <description>Ivan Petrović</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Antea Hadviger</copyright><lastBuildDate>Fri, 25 Sep 2020 11:55:44 +0200</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 Antea Hadviger</copyright><lastBuildDate>Thu, 02 Sep 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://ahadviger.github.io/img/icon-192.png</url>
       <title>Ivan Petrović</title>
       <link>https://ahadviger.github.io/authors/ivan-petrovic/</link>
     </image>
+    
+    <item>
+      <title>Feature-based Event Stereo Visual Odometry</title>
+      <link>https://ahadviger.github.io/publication/event-odometry/</link>
+      <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://ahadviger.github.io/publication/event-odometry/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Stereo dense depth tracking based on optical flow using frames and events</title>

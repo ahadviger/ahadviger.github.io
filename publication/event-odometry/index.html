@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="Event cameras are biologically inspired sensors that asynchronously detect brightness changes in the scene independently for each pixel. Their output is a stream of events which is reported with a low latency and high temporal resolution of a microsecond, making them superior to standard cameras in highly dynamic scenarios when they are sensitive to motion blur. Event cameras can be used in a wide range of applications, one of them being depth estimation, in both stereo and monocular settings. However, most known event-based depth estimation methods yield sparse depth maps due to the nature of the sparse event stream. We present a novel method that fuses information from both events and standard frames, as well as odometry, to exploit the advantages of both sensors. We propose to estimate dense disparity from standard frames at the point of their availability, predict the disparity using odometry information, and track the disparity asynchronously using optical flow of events between the standard frames. We present the performance of the method through several experiments in various setups, including synthetic data, KITTI dataset enhanced with events, MVSEC dataset, as well as our own stereo event camera recordings.">
+  <meta name="description" content="Event-based cameras are biologically inspired sensors that output events, i.e., asynchronous pixel-wise brightness changes in the scene. Their high dynamic range and temporal resolution of a microsecond makes them more reliable than standard cameras in environments of challenging illumination and in high-speed scenarios, thus developing odometry algorithms based solely on event cameras offers exciting new possibilities for autonomous systems and robots. In this paper, we propose a novel stereo visual odometry method for event cameras based on feature detection and matching with careful feature management, while pose estimation is done by reprojection error minimization. We evaluate the performance of the proposed method on two publicly available datasets: MVSEC sequences captured by an indoor flying drone and DSEC outdoor driving sequences. MVSEC offers accurate ground truth from motion capture, while for DSEC, which does not offer ground truth, in order to obtain a reference trajectory on the standard camera frames we used our SOFT visual odometry, one of the highest ranking algorithms on the KITTI scoreboards. We compared our method to the ESVO method, which is the first and still the only stereo event odometry method, showing on par performance on the MVSEC sequences, while on the DSEC dataset ESVO, unlike our method, was unable to handle outdoor driving scenario with default parameters. Furthermore, two important advantages of our method over ESVO are that it adapts tracking frequency to the asynchronous event rate and does not require initialization.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://ahadviger.github.io/publication/disparity-tracking/">
+  <link rel="alternate" hreflang="en-us" href="https://ahadviger.github.io/publication/event-odometry/">
 
   
 
@@ -109,7 +109,7 @@
   <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://ahadviger.github.io/publication/disparity-tracking/">
+  <link rel="canonical" href="https://ahadviger.github.io/publication/event-odometry/">
 
   
   
@@ -122,15 +122,15 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Antea Hadviger">
-  <meta property="og:url" content="https://ahadviger.github.io/publication/disparity-tracking/">
-  <meta property="og:title" content="Stereo dense depth tracking based on optical flow using frames and events | Antea Hadviger">
-  <meta property="og:description" content="Event cameras are biologically inspired sensors that asynchronously detect brightness changes in the scene independently for each pixel. Their output is a stream of events which is reported with a low latency and high temporal resolution of a microsecond, making them superior to standard cameras in highly dynamic scenarios when they are sensitive to motion blur. Event cameras can be used in a wide range of applications, one of them being depth estimation, in both stereo and monocular settings. However, most known event-based depth estimation methods yield sparse depth maps due to the nature of the sparse event stream. We present a novel method that fuses information from both events and standard frames, as well as odometry, to exploit the advantages of both sensors. We propose to estimate dense disparity from standard frames at the point of their availability, predict the disparity using odometry information, and track the disparity asynchronously using optical flow of events between the standard frames. We present the performance of the method through several experiments in various setups, including synthetic data, KITTI dataset enhanced with events, MVSEC dataset, as well as our own stereo event camera recordings."><meta property="og:image" content="https://ahadviger.github.io/img/icon-192.png">
+  <meta property="og:url" content="https://ahadviger.github.io/publication/event-odometry/">
+  <meta property="og:title" content="Feature-based Event Stereo Visual Odometry | Antea Hadviger">
+  <meta property="og:description" content="Event-based cameras are biologically inspired sensors that output events, i.e., asynchronous pixel-wise brightness changes in the scene. Their high dynamic range and temporal resolution of a microsecond makes them more reliable than standard cameras in environments of challenging illumination and in high-speed scenarios, thus developing odometry algorithms based solely on event cameras offers exciting new possibilities for autonomous systems and robots. In this paper, we propose a novel stereo visual odometry method for event cameras based on feature detection and matching with careful feature management, while pose estimation is done by reprojection error minimization. We evaluate the performance of the proposed method on two publicly available datasets: MVSEC sequences captured by an indoor flying drone and DSEC outdoor driving sequences. MVSEC offers accurate ground truth from motion capture, while for DSEC, which does not offer ground truth, in order to obtain a reference trajectory on the standard camera frames we used our SOFT visual odometry, one of the highest ranking algorithms on the KITTI scoreboards. We compared our method to the ESVO method, which is the first and still the only stereo event odometry method, showing on par performance on the MVSEC sequences, while on the DSEC dataset ESVO, unlike our method, was unable to handle outdoor driving scenario with default parameters. Furthermore, two important advantages of our method over ESVO are that it adapts tracking frequency to the asynchronous event rate and does not require initialization."><meta property="og:image" content="https://ahadviger.github.io/img/icon-192.png">
   <meta property="twitter:image" content="https://ahadviger.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2020-09-25T11:55:44&#43;02:00">
+      <meta property="article:published_time" content="2021-09-02T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-09-25T11:55:44&#43;02:00">
+    <meta property="article:modified_time" content="2021-09-02T00:00:00&#43;00:00">
   
 
   
@@ -163,12 +163,12 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://ahadviger.github.io/publication/disparity-tracking/"
+    "@id": "https://ahadviger.github.io/publication/event-odometry/"
   },
-  "headline": "Stereo dense depth tracking based on optical flow using frames and events",
+  "headline": "Feature-based Event Stereo Visual Odometry",
   
-  "datePublished": "2020-09-25T11:55:44+02:00",
-  "dateModified": "2020-09-25T11:55:44+02:00",
+  "datePublished": "2021-09-02T00:00:00Z",
+  "dateModified": "2021-09-02T00:00:00Z",
   
   "publisher": {
     "@type": "Organization",
@@ -178,7 +178,7 @@
       "url": "https://ahadviger.github.io/img/icon-512.png"
     }
   },
-  "description": "Event cameras are biologically inspired sensors that asynchronously detect brightness changes in the scene independently for each pixel. Their output is a stream of events which is reported with a low latency and high temporal resolution of a microsecond, making them superior to standard cameras in highly dynamic scenarios when they are sensitive to motion blur. Event cameras can be used in a wide range of applications, one of them being depth estimation, in both stereo and monocular settings. However, most known event-based depth estimation methods yield sparse depth maps due to the nature of the sparse event stream. We present a novel method that fuses information from both events and standard frames, as well as odometry, to exploit the advantages of both sensors. We propose to estimate dense disparity from standard frames at the point of their availability, predict the disparity using odometry information, and track the disparity asynchronously using optical flow of events between the standard frames. We present the performance of the method through several experiments in various setups, including synthetic data, KITTI dataset enhanced with events, MVSEC dataset, as well as our own stereo event camera recordings."
+  "description": "Event-based cameras are biologically inspired sensors that output events, i.e., asynchronous pixel-wise brightness changes in the scene. Their high dynamic range and temporal resolution of a microsecond makes them more reliable than standard cameras in environments of challenging illumination and in high-speed scenarios, thus developing odometry algorithms based solely on event cameras offers exciting new possibilities for autonomous systems and robots. In this paper, we propose a novel stereo visual odometry method for event cameras based on feature detection and matching with careful feature management, while pose estimation is done by reprojection error minimization. We evaluate the performance of the proposed method on two publicly available datasets: MVSEC sequences captured by an indoor flying drone and DSEC outdoor driving sequences. MVSEC offers accurate ground truth from motion capture, while for DSEC, which does not offer ground truth, in order to obtain a reference trajectory on the standard camera frames we used our SOFT visual odometry, one of the highest ranking algorithms on the KITTI scoreboards. We compared our method to the ESVO method, which is the first and still the only stereo event odometry method, showing on par performance on the MVSEC sequences, while on the DSEC dataset ESVO, unlike our method, was unable to handle outdoor driving scenario with default parameters. Furthermore, two important advantages of our method over ESVO are that it adapts tracking frequency to the asynchronous event rate and does not require initialization."
 }
 </script>
 
@@ -196,7 +196,7 @@
 
 
 
-  <title>Stereo dense depth tracking based on optical flow using frames and events | Antea Hadviger</title>
+  <title>Feature-based Event Stereo Visual Odometry | Antea Hadviger</title>
 
 </head>
 
@@ -408,7 +408,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Stereo dense depth tracking based on optical flow using frames and events</h1>
+  <h1>Feature-based Event Stereo Visual Odometry</h1>
 
   
 
@@ -428,7 +428,7 @@
 
 
 
-  <span><a href="/authors/antea-hadviger/">Antea Hadviger</a></span>, <span><a href="/authors/ivan-markovic/">Ivan Marković</a></span>, <span><a href="/authors/ivan-petrovic/">Ivan Petrović</a></span>
+  <span><a href="/authors/antea-hadviger/">Antea Hadviger</a></span>, <span><a href="/authors/igor-cvisic/">Igor Cvišić</a></span>, <span><a href="/authors/ivan-markovic/">Ivan Marković</a></span>, <span><a href="/authors/sacha-vrazic/">Sacha Vražić</a></span>, <span><a href="/authors/ivan-petrovic/">Ivan Petrović</a></span>
 
   </div>
   
@@ -440,7 +440,7 @@
     
       
     
-    September 2020
+    September 2021
   </span>
   
 
@@ -493,7 +493,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1" href="https://www.tandfonline.com/eprint/3CSRX67J67QQU76XCHZP/full?target=10.1080/01691864.2020.1821770" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/pdf/2107.04921" target="_blank" rel="noopener">
   PDF
 </a>
 
@@ -525,7 +525,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">Event cameras are biologically inspired sensors that asynchronously detect brightness changes in the scene independently for each pixel. Their output is a stream of events which is reported with a low latency and high temporal resolution of a microsecond, making them superior to standard cameras in highly dynamic scenarios when they are sensitive to motion blur. Event cameras can be used in a wide range of applications, one of them being depth estimation, in both stereo and monocular settings. However, most known event-based depth estimation methods yield sparse depth maps due to the nature of the sparse event stream. We present a novel method that fuses information from both events and standard frames, as well as odometry, to exploit the advantages of both sensors. We propose to estimate dense disparity from standard frames at the point of their availability, predict the disparity using odometry information, and track the disparity asynchronously using optical flow of events between the standard frames. We present the performance of the method through several experiments in various setups, including synthetic data, KITTI dataset enhanced with events, MVSEC dataset, as well as our own stereo event camera recordings.</p>
+    <p class="pub-abstract">Event-based cameras are biologically inspired sensors that output events, i.e., asynchronous pixel-wise brightness changes in the scene. Their high dynamic range and temporal resolution of a microsecond makes them more reliable than standard cameras in environments of challenging illumination and in high-speed scenarios, thus developing odometry algorithms based solely on event cameras offers exciting new possibilities for autonomous systems and robots. In this paper, we propose a novel stereo visual odometry method for event cameras based on feature detection and matching with careful feature management, while pose estimation is done by reprojection error minimization. We evaluate the performance of the proposed method on two publicly available datasets: MVSEC sequences captured by an indoor flying drone and DSEC outdoor driving sequences. MVSEC offers accurate ground truth from motion capture, while for DSEC, which does not offer ground truth, in order to obtain a reference trajectory on the standard camera frames we used our SOFT visual odometry, one of the highest ranking algorithms on the KITTI scoreboards. We compared our method to the ESVO method, which is the first and still the only stereo event odometry method, showing on par performance on the MVSEC sequences, while on the DSEC dataset ESVO, unlike our method, was unable to handle outdoor driving scenario with default parameters. Furthermore, two important advantages of our method over ESVO are that it adapts tracking frequency to the asynchronous event rate and does not require initialization.</p>
     
 
     
@@ -537,8 +537,8 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
-              Journal article
+            <a href="/publication/#1">
+              Conference paper
             </a>
             
           </div>
@@ -555,7 +555,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">Advanced Robotics</div>
+          <div class="col-12 col-md-9">European Conference on Mobile Robots</div>
         </div>
       </div>
       <div class="col-md-1"></div>
